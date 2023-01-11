@@ -1,7 +1,19 @@
-//Variables and Invoke app
+//Variables and Invoke app (node and express)
 const express = require('express')
 let app = express()
 
+//MongoDB Connecction
+const mongoose =require('mongoose')
+
+//Connect to the Database
+mongoose.connect('mongodb://localhost/blogTesting')
+.then(function(){
+    console.log('Connection Successfull')
+})
+.catch( (error) => {
+
+    console.log(error)
+})
 
 //Server Path -- default
 app.get('/', (req, res) => {
