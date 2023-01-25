@@ -82,7 +82,7 @@ const Actor = mongoose.model("actor", {
 
     //Actor
     Actor.create({
-        name: 'R2-D2',
+        name: 'R2-D3',
         popularity: 'Unknown',
         movies: ["63cf13d2a8a7f8fa04fd4da6"]
    
@@ -97,7 +97,7 @@ const Actor = mongoose.model("actor", {
     })
     .then((result) => {
         console.log(result)
-    })
+    }) 
     .catch((error) => {
         console.log(error);
     })
